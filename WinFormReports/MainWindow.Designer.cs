@@ -28,21 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            MyReportViewer = new Microsoft.Reporting.WinForms.ReportViewer();
             UsersReportButton = new Button();
             SuspendLayout();
             // 
-            // MyReportViewer
-            // 
-            MyReportViewer.Location = new Point(0, 0);
-            MyReportViewer.Name = "ReportViewer";
-            MyReportViewer.ServerReport.BearerToken = null;
-            MyReportViewer.Size = new Size(396, 300);
-            MyReportViewer.TabIndex = 0;
-            // 
             // UsersReportButton
             // 
-            UsersReportButton.Location = new Point(405, 12);
+            UsersReportButton.Location = new Point(12, 12);
             UsersReportButton.Name = "UsersReportButton";
             UsersReportButton.Size = new Size(117, 41);
             UsersReportButton.TabIndex = 1;
@@ -56,7 +47,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(798, 593);
             Controls.Add(UsersReportButton);
-            Controls.Add(MyReportViewer);
             Name = "MainWindow";
             Text = "Report Viewer";
             Load += MainWindow_Load;
@@ -65,8 +55,6 @@
         }
 
         #endregion
-
-        private Microsoft.Reporting.WinForms.ReportViewer MyReportViewer;
         private Button UsersReportButton;
     }
 }

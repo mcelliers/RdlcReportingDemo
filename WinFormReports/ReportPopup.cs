@@ -25,4 +25,11 @@ public partial class ReportPopup : Form
         MyReportViewer.RefreshReport();
         //MyReportViewer.LocalReport.ReportEmbeddedResource = reportpath;
     }
+
+    private void ReportPopup_Paint(object sender, PaintEventArgs e)
+    {
+        //Resize the ReportViewer
+        if (MyReportViewer.Width != this.Width || MyReportViewer.Height != this.Height)
+        { MyReportViewer.Height = this.Height; MyReportViewer.Width = this.Width; }
+    }
 } //Class End

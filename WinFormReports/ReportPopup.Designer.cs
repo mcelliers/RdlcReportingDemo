@@ -48,6 +48,7 @@
             Name = "ReportPopup";
             Text = "ReportPopup";
             Load += ReportPopup_Load;
+            Paint += ReportPopup_Paint;
             ResumeLayout(false);
         }
 
