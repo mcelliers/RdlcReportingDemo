@@ -1,3 +1,10 @@
+/******************************************************************************************************\
+ * Author :         Marius Celliers 
+ * email  :         marius.celliers@gmail.com
+ * Description :    Demo Application to Demosnstrate ReportViewer in a WinForms DotNet 6 Application 
+ * Date             26/01/2024
+\******************************************************************************************************/
+
 using Microsoft.Reporting.WinForms;
 using System.Data;
 using System.Data.Common;
